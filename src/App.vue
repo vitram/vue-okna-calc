@@ -140,9 +140,11 @@
             <p>Стоимость изделия с комплектацией</p>
             <div class="price">{{ summ }} р.</div>
           </div>
-          <button type="button" class="btn btn-warning btn-lg w-100">
-            Вызвать инженера
-          </button>
+          <a href="/button-inzhiner">
+            <button type="button" class="btn btn-warning btn-lg w-100">
+              Вызвать инженера
+            </button>
+          </a>
         </div>
       </div>
     </div>
