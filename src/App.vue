@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="col-md-5">
-          <h3 class="text-center">Стоимость окна</h3>
+          <h3 class="text-center">Стоимость всего окна</h3>
           <div class="price_block d-flex">
             <p>Стоимость голого изделия</p>
             <div class="price">{{ summ }} р.</div>
