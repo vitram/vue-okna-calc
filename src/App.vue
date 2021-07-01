@@ -263,6 +263,9 @@ export default {
           window.location.pathname;
         var newUrl = baseUrl + "?tyapk=awesome";
         history.pushState(null, null, newUrl);
+        var event = new CustomEvent("motomoto");
+        window.dispatchEvent(event);
+        console.log("Delaem motomoto event");
       } else {
         console.warn("History API не поддерживает ваш браузер");
       }
