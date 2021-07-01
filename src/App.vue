@@ -44,11 +44,19 @@
             <div class="okna_col" v-for="(okno_configs, i) in okna" :key="i">
               <div class="okno_f" @click="setOknaNumber(i)">
                 <img
-                  :src="require('./assets/svg/' + (i + 1) + '_f.svg')"
+                  :src="
+                    'https://raw.githubusercontent.com/vitram/vue-okna-calc/master/src/assets/svg/' +
+                    (i + 1) +
+                    '_f.svg'
+                  "
                   alt=""
                 />
               </div>
-              <img class="triangle" src="./assets/svg/triangle.svg" alt="" />
+              <img
+                class="triangle"
+                src="https://raw.githubusercontent.com/vitram/vue-okna-calc/master/src/assets/svg/triangle.svg"
+                alt=""
+              />
               <div
                 class="okno_config"
                 v-for="okno_config in okno_configs"
@@ -61,11 +69,11 @@
               >
                 <img
                   :src="
-                    require('./assets/svg/' +
-                      (i + 1) +
-                      '_' +
-                      okno_config.config +
-                      '.svg')
+                    'https://raw.githubusercontent.com/vitram/vue-okna-calc/master/src/assets/svg/' +
+                    (i + 1) +
+                    '_' +
+                    okno_config.config +
+                    '.svg'
                   "
                   alt=""
                 />
