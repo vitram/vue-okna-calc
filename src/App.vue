@@ -140,11 +140,14 @@
             <p>Стоимость изделия с комплектацией</p>
             <div class="price">{{ summ }} р.</div>
           </div>
-          <a href="/button-inzhiner">
-            <button type="button" class="btn btn-warning btn-lg w-100">
-              Вызвать инженера
-            </button>
-          </a>
+
+          <button
+            type="button"
+            @click="pushtourl()"
+            class="btn btn-warning btn-lg w-100"
+          >
+            Вызвать инженера
+          </button>
         </div>
       </div>
     </div>
@@ -250,6 +253,19 @@ export default {
       this.setOknaNumber(i);
       this.okna_config = config;
       console.log("config", this.okna_config);
+    },
+    pushtourl() {
+      if (history.pushState) {
+        var baseUrl =
+          window.location.protocol +
+          "//" +
+          window.location.host +
+          window.location.pathname;
+        var newUrl = baseUrl + "?tyapk=awesome";
+        history.pushState(null, null, newUrl);
+      } else {
+        console.warn("History API не поддерживает ваш браузер");
+      }
     },
   },
 };
