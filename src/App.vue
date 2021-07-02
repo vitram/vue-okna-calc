@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="col-md-5 d-flex">
-          <div class="okna_container">
+          <div class="okna_container mb-4">
             <div class="okna_col" v-for="(okno_configs, i) in okna" :key="i">
               <div class="okno_f" @click="setOknaNumber(i)">
                 <img
@@ -325,7 +325,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -446,5 +446,37 @@ p {
   line-height: 51px;
 
   color: #fac755;
+}
+
+@media (max-width: 767.98px) {
+  .price {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .price_block > p {
+    text-align: left;
+    margin-top: 15px;
+    max-width: 200px;
+  }
+
+  .okno_f > img {
+    width: 100%;
+  }
+
+  .okno_config > img {
+    width: 100%;
+  }
+  .okna_col:last-child {
+    margin-right: 0;
+  }
+  .checkbox_item {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .checkbox_container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+  }
 }
 </style>
