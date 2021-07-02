@@ -6,15 +6,22 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <div class="container">
-      <h2 class="text-center">Рассчет стоимости онлайн</h2>
+      <h2 class="text-center mb-4">Расчет стоимости онлайн</h2>
       <div class="row first_config">
         <div class="col-md-3">
           <button
             type="button"
-            class="btn btn-outline-warning btn-lg w-100"
+            class="btn btn-lg w-100"
             :class="{
-              active_button: lvl.level === level_type,
+              'btn-warning': lvl.level === level_type,
+              'btn-outline-warning': lvl.level !== level_type,
             }"
             v-for="lvl in levels"
             :key="lvl.level"
@@ -87,46 +94,68 @@
         <div class="col-md-3">
           <div class="progress_item">
             <p>Шумоизоляция</p>
-            <progress-bar size="small" :val="percent"></progress-bar>
+            <progress-bar
+              bg-color="none"
+              bar-color="#FAC755"
+              size="small"
+              :val="percent"
+            ></progress-bar>
           </div>
           <div class="progress_item">
             <p>Безопасность</p>
-            <progress-bar size="small" :val="percent"></progress-bar>
+            <progress-bar
+              bg-color="none"
+              bar-color="#FAC755"
+              size="small"
+              :val="percent"
+            ></progress-bar>
           </div>
           <div class="progress_item">
             <p>Солнцезащита</p>
-            <progress-bar size="small" :val="percent"></progress-bar>
+            <progress-bar
+              bg-color="none"
+              bar-color="#FAC755"
+              size="small"
+              :val="percent"
+            ></progress-bar>
           </div>
           <div class="progress_item">
             <p>Энергосбережение</p>
-            <progress-bar size="small" :val="percent"></progress-bar>
+            <progress-bar
+              bg-color="none"
+              bar-color="#FAC755"
+              size="small"
+              :val="percent"
+            ></progress-bar>
           </div>
         </div>
         <div class="col-md-4 checkbox_col">
           <div class="checkbox_container">
-            <div class="checkbox_item">
-              <input type="checkbox" id="dostavka" value="dostavka" />
-              <label for="dostavka">Доставка</label>
-            </div>
-            <div class="checkbox_item">
-              <input type="checkbox" id="montazh" value="montazh" />
-              <label for="montazh">Монтаж</label>
-            </div>
-            <div class="checkbox_item">
-              <input type="checkbox" id="setka" value="setka" />
-              <label for="setka">Москитная сетка</label>
-            </div>
-            <div class="checkbox_item">
-              <input type="checkbox" id="otlivi" value="otlivi" />
-              <label for="otlivi">Отливы</label>
-            </div>
-            <div class="checkbox_item">
-              <input type="checkbox" id="podokonniki" value="podokonniki" />
-              <label for="podokonniki">Подоконники</label>
-            </div>
-            <div class="checkbox_item">
-              <input type="checkbox" id="otkosi" value="otkosi" />
-              <label for="otkosi">Откосы</label>
+            <div class="checkbox_row">
+              <div class="checkbox_item">
+                <input type="checkbox" id="dostavka" value="dostavka" />
+                <label for="dostavka">Доставка</label>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="montazh" value="montazh" />
+                <label for="montazh">Монтаж</label>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="setka" value="setka" />
+                <label for="setka">Москитная сетка</label>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="otlivi" value="otlivi" />
+                <label for="otlivi">Отливы</label>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="podokonniki" value="podokonniki" />
+                <label for="podokonniki">Подоконники</label>
+              </div>
+              <div class="checkbox_item">
+                <input type="checkbox" id="otkosi" value="otkosi" />
+                <label for="otkosi">Откосы</label>
+              </div>
             </div>
           </div>
         </div>
@@ -134,17 +163,17 @@
           <h3 class="text-center">Стоимость всего окна</h3>
           <div class="price_block d-flex">
             <p>Стоимость голого изделия</p>
-            <div class="price">{{ summ }} р.</div>
+            <div class="price">{{ summ }} р</div>
           </div>
           <div class="price_block d-flex">
             <p>Стоимость изделия с комплектацией</p>
-            <div class="price">{{ summ }} р.</div>
+            <div class="price">{{ summ }} р</div>
           </div>
 
           <button
             type="button"
             @click="pushtourl()"
-            class="btn btn-warning btn-lg w-100"
+            class="btn btn-warning btn-lg w-100 mt-3"
           >
             Вызвать инженера
           </button>
@@ -156,6 +185,7 @@
 
 <script>
 import ProgressBar from "vue-simple-progress";
+
 export default {
   name: "App",
   components: {
@@ -232,7 +262,7 @@ export default {
         return 15;
       }
       if (this.level_type === 1) {
-        return 40;
+        return 60;
       }
       if (this.level_type === 2) {
         return 90;
@@ -261,7 +291,19 @@ export default {
           "//" +
           window.location.host +
           window.location.pathname;
-        var newUrl = baseUrl + "?tyapk=awesome";
+
+        var params = {
+          level: this.level_type,
+          okna_number: this.okna_number,
+          okna_config: this.okna_config,
+        };
+
+        var esc = encodeURIComponent;
+        var query = Object.keys(params)
+          .map((k) => esc(k) + "=" + esc(params[k]))
+          .join("&");
+
+        var newUrl = baseUrl + "?" + query;
         history.pushState(null, null, newUrl);
         var event = new CustomEvent("motomoto");
         window.dispatchEvent(event);
@@ -282,8 +324,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding-top: 140px;
+  padding-top: 100px;
   padding-bottom: 150px;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
@@ -347,6 +390,15 @@ p {
 }
 
 .second_config {
+  align-items: center;
+}
+
+.progress_item {
+  margin-bottom: 25px;
+}
+
+.progress_item > p {
+  text-align: left;
 }
 .checkbox_col {
   display: flex;
@@ -354,28 +406,45 @@ p {
 }
 .checkbox_container {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.checkbox_row {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
 }
 
 .checkbox_item {
   display: flex;
-  align-items: center;
 }
 .checkbox_item > input {
   margin-right: 32px;
+  margin-top: 5px;
 }
 .checkbox_item > label {
   color: white;
 }
 
 .price_block {
+  align-items: center;
   justify-content: space-between;
 }
 
+.price_block > p {
+  text-align: left;
+  margin-top: 15px;
+}
+
 .price {
-  font-size: 30px;
   color: white;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 51px;
+
+  color: #fac755;
 }
 </style>
