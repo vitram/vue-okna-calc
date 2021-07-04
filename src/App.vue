@@ -169,11 +169,14 @@
             <p>Стоимость изделия с комплектацией</p>
             <div class="price">{{ summ }} р</div>
           </div>
-          <a href="#popup:form_for_calc" class="showsform">
-            <button type="button" class="btn btn-warning btn-lg w-100 mt-3">
-              Вызвать инженера
-            </button>
-          </a>
+
+          <button
+            @click="pushtourl()"
+            type="button"
+            class="btn btn-warning btn-lg w-100 mt-3"
+          >
+            Вызвать инженера
+          </button>
         </div>
       </div>
     </div>
