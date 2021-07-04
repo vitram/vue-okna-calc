@@ -133,27 +133,63 @@
           <div class="checkbox_container">
             <div class="checkbox_row">
               <div class="checkbox_item">
-                <input type="checkbox" id="dostavka" value="dostavka" />
+                <input
+                  type="checkbox"
+                  id="dostavka"
+                  value="0"
+                  @change="setOptions()"
+                  v-model="checkedoptions"
+                />
                 <label for="dostavka">Доставка</label>
               </div>
               <div class="checkbox_item">
-                <input type="checkbox" id="montazh" value="montazh" />
+                <input
+                  type="checkbox"
+                  id="montazh"
+                  value="1500"
+                  @change="setOptions()"
+                  v-model="checkedoptions"
+                />
                 <label for="montazh">Монтаж</label>
               </div>
               <div class="checkbox_item">
-                <input type="checkbox" id="setka" value="setka" />
+                <input
+                  type="checkbox"
+                  id="setka"
+                  value="500"
+                  v-model="checkedoptions"
+                  @change="setOptions()"
+                />
                 <label for="setka">Москитная сетка</label>
               </div>
               <div class="checkbox_item">
-                <input type="checkbox" id="otlivi" value="otlivi" />
+                <input
+                  type="checkbox"
+                  id="otlivi"
+                  value="1000"
+                  @change="setOptions()"
+                  v-model="checkedoptions"
+                />
                 <label for="otlivi">Отливы</label>
               </div>
               <div class="checkbox_item">
-                <input type="checkbox" id="podokonniki" value="podokonniki" />
+                <input
+                  type="checkbox"
+                  id="podokonniki"
+                  value="400"
+                  @change="setOptions()"
+                  v-model="checkedoptions"
+                />
                 <label for="podokonniki">Подоконники</label>
               </div>
               <div class="checkbox_item">
-                <input type="checkbox" id="otkosi" value="otkosi" />
+                <input
+                  type="checkbox"
+                  id="otkosi"
+                  value="1400"
+                  @change="setOptions()"
+                  v-model="checkedoptions"
+                />
                 <label for="otkosi">Откосы</label>
               </div>
             </div>
@@ -241,18 +277,29 @@ export default {
           },
         ],
       ],
+      checkedoptions: [],
+      options_sum: 0,
     };
   },
   computed: {
     summ() {
       if (this.level_type === 0) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_low;
+        return (
+          this.okna[this.okna_number][this.okna_config - 1].price_low +
+          this.options_sum
+        );
       }
       if (this.level_type === 1) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_middle;
+        return (
+          this.okna[this.okna_number][this.okna_config - 1].price_middle +
+          this.options_sum
+        );
       }
       if (this.level_type === 2) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_vip;
+        return (
+          this.okna[this.okna_number][this.okna_config - 1].price_vip +
+          this.options_sum
+        );
       }
 
       return 5000;
@@ -283,6 +330,14 @@ export default {
       this.setOknaNumber(i);
       this.okna_config = config;
       console.log("config", this.okna_config);
+    },
+    setOptions() {
+      this.options_sum = 0;
+
+      this.checkedoptions.forEach((element) => {
+        console.log(element);
+        this.options_sum += Number(element);
+      });
     },
     pushtourl() {
       if (history.pushState) {
@@ -433,6 +488,7 @@ p {
 }
 
 .price_block > p {
+  max-width: 200px;
   text-align: left;
   margin-top: 15px;
 }

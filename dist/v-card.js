@@ -723,7 +723,7 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"31633692-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=99e4f63a&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"31633692-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=93c414b8&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('link',{attrs:{"rel":"stylesheet","href":"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css","integrity":"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T","crossorigin":"anonymous"}}),_c('link',{attrs:{"rel":"preconnect","href":"https://fonts.googleapis.com"}}),_c('link',{attrs:{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""}}),_c('link',{attrs:{"href":"https://fonts.googleapis.com/css2?family=Montserrat&display=swap","rel":"stylesheet"}}),_c('div',{staticClass:"container"},[_c('h2',{staticClass:"text-center mb-4"},[_vm._v("Расчет стоимости онлайн")]),_c('div',{staticClass:"row first_config"},[_c('div',{staticClass:"col-md-3"},_vm._l((_vm.levels),function(lvl){return _c('button',{key:lvl.level,staticClass:"btn btn-lg w-100",class:{
             'btn-warning': lvl.level === _vm.level_type,
             'btn-outline-warning': lvl.level !== _vm.level_type,
@@ -736,17 +736,53 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
                   (i + 1) +
                   '_' +
                   okno_config.config +
-                  '.svg',"alt":""}})])})],2)}),0)])]),_c('div',{staticClass:"row second_config"},[_c('div',{staticClass:"col-md-3"},[_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Шумоизоляция")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Безопасность")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Солнцезащита")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Энергосбережение")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1)]),_vm._m(0),_c('div',{staticClass:"col-md-5"},[_c('h3',{staticClass:"text-center"},[_vm._v("Стоимость всего окна")]),_c('div',{staticClass:"price_block d-flex"},[_c('p',[_vm._v("Стоимость голого изделия")]),_c('div',{staticClass:"price"},[_vm._v(_vm._s(_vm.summ)+" р")])]),_c('div',{staticClass:"price_block d-flex"},[_c('p',[_vm._v("Стоимость изделия с комплектацией")]),_c('div',{staticClass:"price"},[_vm._v(_vm._s(_vm.summ)+" р")])]),_c('button',{staticClass:"btn btn-warning btn-lg w-100 mt-3",attrs:{"type":"button"},on:{"click":function($event){return _vm.pushtourl()}}},[_vm._v(" Вызвать инженера ")])])])])])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"col-md-4 checkbox_col"},[_c('div',{staticClass:"checkbox_container"},[_c('div',{staticClass:"checkbox_row"},[_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"dostavka","value":"dostavka"}}),_c('label',{attrs:{"for":"dostavka"}},[_vm._v("Доставка")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"montazh","value":"montazh"}}),_c('label',{attrs:{"for":"montazh"}},[_vm._v("Монтаж")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"setka","value":"setka"}}),_c('label',{attrs:{"for":"setka"}},[_vm._v("Москитная сетка")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"otlivi","value":"otlivi"}}),_c('label',{attrs:{"for":"otlivi"}},[_vm._v("Отливы")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"podokonniki","value":"podokonniki"}}),_c('label',{attrs:{"for":"podokonniki"}},[_vm._v("Подоконники")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{attrs:{"type":"checkbox","id":"otkosi","value":"otkosi"}}),_c('label',{attrs:{"for":"otkosi"}},[_vm._v("Откосы")])])])])])}]
+                  '.svg',"alt":""}})])})],2)}),0)])]),_c('div',{staticClass:"row second_config"},[_c('div',{staticClass:"col-md-3"},[_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Шумоизоляция")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Безопасность")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Солнцезащита")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1),_c('div',{staticClass:"progress_item"},[_c('p',[_vm._v("Энергосбережение")]),_c('progress-bar',{attrs:{"bg-color":"none","bar-color":"#FAC755","size":"small","val":_vm.percent}})],1)]),_c('div',{staticClass:"col-md-4 checkbox_col"},[_c('div',{staticClass:"checkbox_container"},[_c('div',{staticClass:"checkbox_row"},[_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"dostavka","value":"0"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"0")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="0",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"dostavka"}},[_vm._v("Доставка")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"montazh","value":"1500"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"1500")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="1500",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"montazh"}},[_vm._v("Монтаж")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"setka","value":"500"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"500")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="500",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"setka"}},[_vm._v("Москитная сетка")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"otlivi","value":"1000"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"1000")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="1000",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"otlivi"}},[_vm._v("Отливы")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"podokonniki","value":"400"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"400")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="400",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"podokonniki"}},[_vm._v("Подоконники")])]),_c('div',{staticClass:"checkbox_item"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedoptions),expression:"checkedoptions"}],attrs:{"type":"checkbox","id":"otkosi","value":"1400"},domProps:{"checked":Array.isArray(_vm.checkedoptions)?_vm._i(_vm.checkedoptions,"1400")>-1:(_vm.checkedoptions)},on:{"change":[function($event){var $$a=_vm.checkedoptions,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v="1400",$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedoptions=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedoptions=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedoptions=$$c}},function($event){return _vm.setOptions()}]}}),_c('label',{attrs:{"for":"otkosi"}},[_vm._v("Откосы")])])])])]),_c('div',{staticClass:"col-md-5"},[_c('h3',{staticClass:"text-center"},[_vm._v("Стоимость всего окна")]),_c('div',{staticClass:"price_block d-flex"},[_c('p',[_vm._v("Стоимость голого изделия")]),_c('div',{staticClass:"price"},[_vm._v(_vm._s(_vm.summ)+" р")])]),_c('div',{staticClass:"price_block d-flex"},[_c('p',[_vm._v("Стоимость изделия с комплектацией")]),_c('div',{staticClass:"price"},[_vm._v(_vm._s(_vm.summ)+" р")])]),_c('button',{staticClass:"btn btn-warning btn-lg w-100 mt-3",attrs:{"type":"button"},on:{"click":function($event){return _vm.pushtourl()}}},[_vm._v(" Вызвать инженера ")])])])])])}
+var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=99e4f63a&shadow
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=93c414b8&shadow
 
 // EXTERNAL MODULE: ./node_modules/vue-simple-progress/dist/vue-simple-progress.js
 var vue_simple_progress = __webpack_require__("a7e3");
 var vue_simple_progress_default = /*#__PURE__*/__webpack_require__.n(vue_simple_progress);
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&shadow
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1004,22 +1040,24 @@ var vue_simple_progress_default = /*#__PURE__*/__webpack_require__.n(vue_simple_
         price_low: 14900,
         price_middle: 16432,
         price_vip: 17565
-      }]]
+      }]],
+      checkedoptions: [],
+      options_sum: 0
     };
   },
 
   computed: {
     summ() {
       if (this.level_type === 0) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_low;
+        return this.okna[this.okna_number][this.okna_config - 1].price_low + this.options_sum;
       }
 
       if (this.level_type === 1) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_middle;
+        return this.okna[this.okna_number][this.okna_config - 1].price_middle + this.options_sum;
       }
 
       if (this.level_type === 2) {
-        return this.okna[this.okna_number][this.okna_config - 1].price_vip;
+        return this.okna[this.okna_number][this.okna_config - 1].price_vip + this.options_sum;
       }
 
       return 5000;
@@ -1057,6 +1095,14 @@ var vue_simple_progress_default = /*#__PURE__*/__webpack_require__.n(vue_simple_
       this.setOknaNumber(i);
       this.okna_config = config;
       console.log("config", this.okna_config);
+    },
+
+    setOptions() {
+      this.options_sum = 0;
+      this.checkedoptions.forEach(element => {
+        console.log(element);
+        this.options_sum += Number(element);
+      });
     },
 
     pushtourl() {
@@ -1130,7 +1176,7 @@ window.customElements.define('v-card', vue_wc_wrapper(external_Vue_default.a, Ap
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#app{background:#191e29;font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;padding-top:100px;padding-bottom:100px;font-family:Montserrat,sans-serif}h2,h3,p{color:#fff}.btn{margin-bottom:20px}.active_button{background:#fac755!important}.active_okno{background:rgba(250,198,85,.2549019607843137);box-shadow:0 0 10px rgba(250,198,85,.2549019607843137)}.first_config{align-items:center}.image_container{display:flex;justify-content:center}.image_container>img{height:400px}.okna_container{display:flex;justify-content:space-between}.okna_col{margin-right:25px}.okno_f{cursor:pointer}.triangle{margin-top:18px;margin-bottom:18px}.okno_config{cursor:pointer;margin-bottom:12px}.second_config{align-items:center}.progress_item{margin-bottom:25px}.progress_item>p{text-align:left}.checkbox_col,.checkbox_container{display:flex;justify-content:center}.checkbox_container{width:100%}.checkbox_row{display:flex;flex-direction:column;justify-content:space-between}.checkbox_item{display:flex}.checkbox_item>input{margin-right:32px;margin-top:5px}.checkbox_item>label{color:#fff}.price_block{align-items:center;justify-content:space-between}.price_block>p{text-align:left;margin-top:15px}.price{color:#fff;font-family:Georgia;font-style:normal;font-weight:400;font-size:45px;line-height:51px;color:#fac755}@media (max-width:767.98px){.price{font-size:35px;line-height:45px}.price_block>p{text-align:left;margin-top:15px;max-width:200px}.okno_config>img,.okno_f>img{width:100%}.okna_col:last-child{margin-right:0}.checkbox_item{width:100%;justify-content:space-between}.checkbox_container{margin-top:40px;margin-bottom:40px;display:block}}", ""]);
+exports.push([module.i, "#app{background:#191e29;font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;padding-top:100px;padding-bottom:100px;font-family:Montserrat,sans-serif}h2,h3,p{color:#fff}.btn{margin-bottom:20px}.active_button{background:#fac755!important}.active_okno{background:rgba(250,198,85,.2549019607843137);box-shadow:0 0 10px rgba(250,198,85,.2549019607843137)}.first_config{align-items:center}.image_container{display:flex;justify-content:center}.image_container>img{height:400px}.okna_container{display:flex;justify-content:space-between}.okna_col{margin-right:25px}.okno_f{cursor:pointer}.triangle{margin-top:18px;margin-bottom:18px}.okno_config{cursor:pointer;margin-bottom:12px}.second_config{align-items:center}.progress_item{margin-bottom:25px}.progress_item>p{text-align:left}.checkbox_col,.checkbox_container{display:flex;justify-content:center}.checkbox_container{width:100%}.checkbox_row{display:flex;flex-direction:column;justify-content:space-between}.checkbox_item{display:flex}.checkbox_item>input{margin-right:32px;margin-top:5px}.checkbox_item>label{color:#fff}.price_block{align-items:center;justify-content:space-between}.price_block>p{max-width:200px;text-align:left;margin-top:15px}.price{color:#fff;font-family:Georgia;font-style:normal;font-weight:400;font-size:45px;line-height:51px;color:#fac755}@media (max-width:767.98px){.price{font-size:35px;line-height:45px}.price_block>p{text-align:left;margin-top:15px;max-width:200px}.okno_config>img,.okno_f>img{width:100%}.okna_col:last-child{margin-right:0}.checkbox_item{width:100%;justify-content:space-between}.checkbox_container{margin-top:40px;margin-bottom:40px;display:block}}", ""]);
 // Exports
 module.exports = exports;
 
