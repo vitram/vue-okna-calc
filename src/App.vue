@@ -245,7 +245,8 @@ export default {
         ],
         [
           { config: 1, price_low: 6749, price_middle: 7642, price_vip: 8241 },
-          { config: 2, price_low: 9028, price_middle: 9777, price_vip: 10284 },
+          { config: 2, price_low: 6749, price_middle: 7642, price_vip: 8241 },
+          { config: 3, price_low: 9028, price_middle: 9777, price_vip: 10284 },
         ],
         [
           { config: 1, price_low: 9100, price_middle: 10531, price_vip: 11586 },
