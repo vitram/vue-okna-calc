@@ -723,7 +723,7 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"31633692-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=93c414b8&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"31633692-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=39e47d4c&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('link',{attrs:{"rel":"stylesheet","href":"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css","integrity":"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T","crossorigin":"anonymous"}}),_c('link',{attrs:{"rel":"preconnect","href":"https://fonts.googleapis.com"}}),_c('link',{attrs:{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""}}),_c('link',{attrs:{"href":"https://fonts.googleapis.com/css2?family=Montserrat&display=swap","rel":"stylesheet"}}),_c('div',{staticClass:"container"},[_c('h2',{staticClass:"text-center mb-4"},[_vm._v("Расчет стоимости онлайн")]),_c('div',{staticClass:"row first_config"},[_c('div',{staticClass:"col-md-3"},_vm._l((_vm.levels),function(lvl){return _c('button',{key:lvl.level,staticClass:"btn btn-lg w-100",class:{
             'btn-warning': lvl.level === _vm.level_type,
             'btn-outline-warning': lvl.level !== _vm.level_type,
@@ -740,7 +740,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=93c414b8&shadow
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=39e47d4c&shadow
 
 // EXTERNAL MODULE: ./node_modules/vue-simple-progress/dist/vue-simple-progress.js
 var vue_simple_progress = __webpack_require__("a7e3");
@@ -992,26 +992,31 @@ var vue_simple_progress_default = /*#__PURE__*/__webpack_require__.n(vue_simple_
       okna_config: 1,
       okna: [[{
         config: 1,
-        price_low: 100,
-        price_middle: 200,
-        price_vip: 300
+        price_low: 3200,
+        price_middle: 3200,
+        price_vip: 3200
       }, {
         config: 2,
-        price_low: 100,
-        price_middle: 200,
-        price_vip: 300
+        price_low: 4700,
+        price_middle: 4700,
+        price_vip: 4700
       }, {
         config: 3,
-        price_low: 100,
-        price_middle: 200,
-        price_vip: 300
+        price_low: 5000,
+        price_middle: 5000,
+        price_vip: 5000
       }], [{
         config: 1,
+        price_low: 4236,
+        price_middle: 5273,
+        price_vip: 5964
+      }, {
+        config: 2,
         price_low: 6749,
         price_middle: 7642,
         price_vip: 8241
       }, {
-        config: 2,
+        config: 3,
         price_low: 9028,
         price_middle: 9777,
         price_vip: 10284

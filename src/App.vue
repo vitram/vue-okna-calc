@@ -239,12 +239,12 @@ export default {
       okna_config: 1,
       okna: [
         [
-          { config: 1, price_low: 100, price_middle: 200, price_vip: 300 },
-          { config: 2, price_low: 100, price_middle: 200, price_vip: 300 },
-          { config: 3, price_low: 100, price_middle: 200, price_vip: 300 },
+          { config: 1, price_low: 3200, price_middle: 3200, price_vip: 3200 },
+          { config: 2, price_low: 4700, price_middle: 4700, price_vip: 4700 },
+          { config: 3, price_low: 5000, price_middle: 5000, price_vip: 5000 },
         ],
         [
-          { config: 1, price_low: 6749, price_middle: 7642, price_vip: 8241 },
+          { config: 1, price_low: 4236, price_middle: 5273, price_vip: 5964 },
           { config: 2, price_low: 6749, price_middle: 7642, price_vip: 8241 },
           { config: 3, price_low: 9028, price_middle: 9777, price_vip: 10284 },
         ],
